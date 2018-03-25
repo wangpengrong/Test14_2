@@ -5,9 +5,32 @@
     }
     a {
         text-decoration:none ;
-
     }
     img{
-        border: 0px ;
+        border: 0px  ;
     }
-    *{}
+    li {
+        list-style: none;
+    }
+/*  css重置  */
+#header {
+    background: url(../img/8.jpg) no-repeat  center center ;
+    height: 600px;
+
+}
+#login ,#header h1  {
+    color: white;
+}
+#cart {
+    color: white;
+    width: 260px;
+    height: 30px;
+    background: black  ;
+    opacity: 0.6;
+    text-align: center;
+    cursor: pointer ;
+;
+}
+#header img{
+    vertical-align:middle;
+}

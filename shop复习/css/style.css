@@ -1,0 +1,14 @@
+/* css重置 */
+*{
+    margin: 0px;
+    padding: 0px ;
+}
+a{
+    text-decoration: none ;
+}
+li{
+    list-style: none ;
+}
+img{
+    border: 0px ;
+}

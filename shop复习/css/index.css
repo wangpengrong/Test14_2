@@ -2,3 +2,21 @@
     background: url(../img/1.png  )  center center no-repeat ;
     height: 800px;
 }
+#new-product {
+    background: gold ;color: #cccccc; border: 1px ; cursor: pointer ;
+}
+.login {
+    background: #000;
+    color: white;
+    height: 30px;
+    width: 260px;
+    padding:  10px 20px ;
+    text-align: center ;
+    opacity: 0.4;
+    filter: alpha(opacity=40)  ;
+    cursor:pointer ;
+
+}
+.login  img{
+    vertical-align: middle ;
+}

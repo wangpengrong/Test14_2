@@ -13,3 +13,9 @@ li {
     list-style: none;
 }
 /*  css重置  */
+
+.wrapper{
+    width: 1140px;
+    background: #cccccc;
+    height: 100%;
+}

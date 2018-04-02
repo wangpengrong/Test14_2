@@ -81,5 +81,10 @@ div.float#cart {
     width: 1140px;
     height: 300px;
     background: #ffffff;
+    margin-left:-190px ;
+    display: none;
+}
+#makeup :hover #submenu {
+    display: block;
 }
 

@@ -1,4 +1,4 @@
-/*  css重置  */
+/*  header开始  */
     *{
         margin: 0px ;
         padding: 0px ;
@@ -28,17 +28,18 @@
 #login a{
     color: white;
 }
-div.float#cart {
+#main-header #cart {
     color: white;
     width: 260px;
-    height: 30px;
-    background: black  ;
+    height: 20px;
+    background: black  url("../img/购物车.jpg")  no-repeat 230px  center  ;
     opacity: 0.6;
     text-align: center;
     cursor: pointer ;
     margin-top: 35px;
-    line-height: 0px;
+    line-height: 20px;
     float: right;
+    padding: 10px  20px ;
 
 
 }
@@ -74,6 +75,7 @@ div.float#cart {
     height: 100%;
     width: 100%;
     display: block;
+
 }
 #nav .selected {
     background: #3c3b3b;}
@@ -84,7 +86,47 @@ div.float#cart {
     margin-left:-190px ;
     display: none;
 }
-#makeup :hover #submenu {
+#makeup:hover #submenu {
     display: block;
 }
+#cart p{
+    /*margin-top: 12px;*/
+    position:relative;
+    /*left:200px;*/
+    top: 12px;
+    color: white;
+}
+/*  header结束*/
+/* new-product开始 */
+#new-product {
+    margin-top: 30px;
+    height: 290px;
+}
+#new-product  .sale {
+    /*position: relative;*/
+    width: 365px;
+    background-repeat:  no-repeat ;
+    height: 260px;
+    float: left;
+    margin-right:15px ;
+    font-size:30px ;
+}
+#new-product  .bg1 {
+    background-image: url("../img/bg1.jpg ");
+}#new-product  .bg2 {
+    background-image: url("../img/bg2.jpg ");
+}#new-product  .bg3 {
+    background-image: url("../img/bg3.jpg ");
+    margin-right: 0px;
+}
+#new-product  .sale  h4 {
+    /*position: absolute;*/
+    /*right: 50px;*/
+    /*bottom: 20px;*/
+    margin-top: 190px;
+    margin-left: 200px;
+
+}
+
+/*new-product结束*/
 

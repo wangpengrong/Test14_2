@@ -224,6 +224,17 @@ color: white;
     float: right;
 }
 #footer  h3{
-    float: left; 
+    float: left;
 }
 /*footer结束*/
+/*#liu {*/
+    /*position: fixed;*/
+    /*background: #00ff00  ;*/
+    /*width: 100px;*/
+    /*height: 50px;*/
+    /*margin-left: 500px;*/
+    /*margin-top: 200px;*/
+    /*color: red; */
+    /*line-height:50px ;*/
+
+}

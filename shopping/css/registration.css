@@ -1,0 +1,26 @@
+#header {
+    height: 350px;
+}
+#regist-info .reg {
+    color: #999;
+    padding: 20px 0px;
+}
+#regist-info .reg a{
+    color: #000;
+}
+#regist-info .reg a:hover {
+    color: #ef8743;
+    text-decoration: underline ;
+}
+#reg-form {
+    width: 555px;
+    height: 318px;
+}
+#reg-form  label span{
+    width: 150px;
+    float: left;/* 1.使span可以设置宽高 2.在一行 */
+}
+#reg-form  label input {
+    width: 400px;
+    height: 38px;
+}

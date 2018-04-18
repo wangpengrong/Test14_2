@@ -1,0 +1,92 @@
+#header {
+    height: 350px;
+}
+#login-container  form {
+    width: 570px;
+    float: left;
+    height: 290px;
+}
+#login-container{
+    margin-top: 30px;
+    height: 400px;
+}
+#login-container h5{
+    color: #5d5959;
+    font-size: 20px;
+}
+#login-container label{
+    margin-top: 20px;
+    display: block;
+}
+#login-container label  input {
+    width: 400px;
+    height: 38px;
+    outline: none ;
+    text-indent: 10px ;
+    font-size: 20px;
+}
+/* 属性选择器 */
+#login-container input[ value="login"]{
+    width: 114px;
+    height: 41px;
+    background: #ef8743 ;
+    color: white;
+
+}
+#login-container  .btn{  font-size: 20px;
+    border: none ;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;}
+#login-container input[ value="login"]:hover {
+    background: white  ;
+    color: black;
+    border: 1px solid #000000;
+}
+#forget {
+    color:#5d5959 ;
+    text-decoration: underline ;
+    margin-top: 20px;
+    display: block;
+}
+#regiter {
+   float: right;
+    width: 540px
+}
+#regiter h3{
+    color: #ef8743 ;
+}
+#regiter p{
+    color: #999;
+    margin:20px 0px ;
+}
+#regiter .btn {
+    width: 106px;
+    height: 42px;
+    background: #ffffff;
+    border: 1px solid  #000000;
+    display: block;
+    text-align: center ;
+    line-height: 42px;
+    color: #000;
+}
+#regiter  .btn:hover {
+    border-color:#ef8743 ;
+    color: white;
+    background: #ef8743;
+}
+#footer {
+    height: 82px;
+    background: #fa558f;
+    line-height: 82px;
+}
+#footer h3,#footer h4{
+    color: white;
+}
+#footer  h4{
+    float: right;
+}
+#footer  h3{
+    float: left;
+}
+/*footer结束*/

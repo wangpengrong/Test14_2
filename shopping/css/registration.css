@@ -1,9 +1,13 @@
 #header {
     height: 350px;
 }
+#regist-info{
+    height: 500px;
+    margin-top: 30px;
+}
 #regist-info .reg {
     color: #999;
-    padding: 20px 0px;
+    margin: 20px 0px;
 }
 #regist-info .reg a{
     color: #000;
@@ -12,15 +16,47 @@
     color: #ef8743;
     text-decoration: underline ;
 }
+#regist-info p{
+    margin-top: 20px;
+}
 #reg-form {
     width: 555px;
     height: 318px;
 }
 #reg-form  label span{
     width: 150px;
+    color: #5d5959;
     float: left;/* 1.使span可以设置宽高 2.在一行 */
 }
 #reg-form  label input {
     width: 400px;
     height: 38px;
+    outline: none;
+    text-indent: 10px;
+}
+
+#regist-info input[type="submit"]{
+    width: 444px;
+    height: 41px;
+    background: #ef8743;
+    border: 0px;
+    outline: none ;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 55px;
+    font-size: 20px;
+    cursor: pointer ;
+    color: white;
+}
+#regist-info input[type="submit"]:hover {
+    background: white ;
+    color: black;
+    border: 1px  solid  black;
+}
+#regist-info .promise {
+    width: 555px;
+    margin-left: 30px;
+}
+#regist-info .promise h3{
+    color: #ef8743;
 }

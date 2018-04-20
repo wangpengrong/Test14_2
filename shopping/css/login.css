@@ -3,7 +3,7 @@
 }
 #login-container  form {
     width: 570px;
-    float: left;
+    /*float: left;*/
     height: 290px;
 }
 #login-container{

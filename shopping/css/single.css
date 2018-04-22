@@ -1,0 +1,51 @@
+#single {
+    height: 650px;
+    margin-top: 50px;
+}
+
+#single-pic {
+    width: 494px;
+    height: 567px;
+    overflow: hidden;
+}
+#single-description {
+    width: 570px;
+    height: 612px;
+    margin-left: 50px;
+}
+#single-pic .big-pic{
+    padding: 6px;
+    border: 1px solid  #ccc;
+}
+#single-pic .big-pic img {
+    width: 480px;
+    height: 400px;
+}
+#single-pic  .small-pic {
+    width: 800px;
+    height: 133px;
+    margin-top: 10px;
+}
+#single-pic  .small-pic img{
+    width: 150px;
+    height: 125px;
+    border: 1px solid  #ccc;
+    padding: 3px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer ;
+}
+#single-description  .lip {
+    color: #cccccc;
+    font-size: 12px;
+}
+#single-description  .price {
+    color: #fa558f;
+    font-size: 30px;
+    margin: 30px 0;
+
+}
+#single-description .num    {
+    width: 50px;
+    height: 37px;
+}

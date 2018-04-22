@@ -21,19 +21,19 @@ li {
     margin: 0 auto ;
 }
 /*  header开始  */
-*{
-    margin: 0px ;
-    padding: 0px ;
-}
-a {
-    text-decoration:none ;
-}
-img{
-    border: 0px  ;
-}
-li {
-    list-style: none;
-}
+/**{*/
+    /*margin: 0px ;*/
+    /*padding: 0px ;*/
+/*}*/
+/*a {*/
+    /*text-decoration:none ;*/
+/*}*/
+/*img{*/
+    /*border: 0px  ;*/
+/*}*/
+/*li {*/
+    /*list-style: none;*/
+/*}*/
 /*  css重置  */
 #header {
     background: url(../img/8.jpg) no-repeat  center center ;

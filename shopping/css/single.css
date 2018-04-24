@@ -114,3 +114,9 @@
 #dependence .product-info  {
     float: left;
 }
+#dependence h4{
+    cursor: pointer ;
+}
+#dependence h4:hover {
+    color: #ff530d;
+}

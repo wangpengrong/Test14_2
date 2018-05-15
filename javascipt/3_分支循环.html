@@ -8,19 +8,95 @@
 
 
     <script>
-        if(){
+        // if(){
+        //
+        // }else{
+        //
+        // }
+        // if(){
+        //
+        // }else if(){
+        //
+        // }
 
-        }else{
 
+        // function fn(){
+        //     console.log(parseInt (Math.random()*37));
+        // }
+        // for(var i=0;i<7;i++){
+        //     fn()
+        // }
+        // function getRangeRandom(low,high){
+        //     return Math.random()*(high-low)+low;
+        // }
+        // console.log(getRangeRandom (3,9))
+
+        // var x=Math.random();
+        // var y=Math.random();
+        // document.write("x="+x)
+        // document.write("y="+y)
+        // if(x>y){
+        //     document.write("最大值为:"+x)
+        // }else {
+        //     document.write("最大值为:"+y)
+        // }
+        //
+        // function getMax(x,y){
+        //     return x>y ? x:y;
+        // }
+        // var x=Math.random();
+        // var y=Math.random();
+        // document.write("<h1>x="+x+"</h1>");
+        // document.write("<h1>y="+y+"</h1>");
+        // document.write("<h1>最大值为:"+getMax(x,y)+"</h1>")
+        //
+        // (function (){
+        //     function getLeapYear(year){
+        //         if( (year % 4 ==0) && (year % 100 != 0) || year % 400 ==0){
+        //             return true;
+        //         }else{
+        //             return false;
+        //         }
+        //     }
+        //     var year = 2017
+        //     if(getLeapYear(year)){
+        //         document.write(year + "年是闰年")
+        //     }else{
+        //         document.write(year + "年不是闰年")
+        //     }
+        //
+        //
+        // })();
+        function factorial(num) {
+            if(num == 1){
+                return  1;
+            }
+            return  num * arguments.callee(num - 1);
         }
-        if(){
-
-        }else if(){
-
+        document.write(factorial(10));
+        // function factorial2(num) {
+        //     var result = 1;
+        //     var i ;
+        //     for (i=1 ;i<=num ; i++) {
+        //         result *= i
+        //     }
+        //     return result ;
+        // }
+        // document.write (factorial2(10))
+        // var sum = 0;
+        // for(var i =1;i<=10;i++){
+        //     sum +=factorial(i)
+        // }
+        // document.write(sum);
+        function print(num){
+            for(var i=1;i<=num;i++){
+                for(var j=1;j<=i;j++){
+                    document.write(j + "&nbsp");
+                }
+                document.write("<br>");
+            }
         }
-
-
-
+        print(9);
     </script>
 </body>
 </html>

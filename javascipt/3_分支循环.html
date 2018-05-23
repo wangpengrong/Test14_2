@@ -67,14 +67,14 @@
         //
         //
         // })();
-        function factorial(num) {
-            if(num == 1){
-                return  1;
-            }
-            return  num * arguments.callee(num - 1);
-        }
-        document.write(factorial(10));
-        // function factorial2(num) {
+        // function factorial(num) {
+        //     if(num == 1){
+        //         return  1;
+        //     }
+        //     return  num * arguments.callee(num - 1);
+        // }
+        // document.write(factorial(10));
+        // // function factorial2(num) {
         //     var result = 1;
         //     var i ;
         //     for (i=1 ;i<=num ; i++) {
@@ -88,15 +88,88 @@
         //     sum +=factorial(i)
         // }
         // document.write(sum);
-        function print(num){
-            for(var i=1;i<=num;i++){
-                for(var j=1;j<=i;j++){
-                    document.write(j + "&nbsp");
-                }
-                document.write("<br>");
+        // function print(num){
+        //     for(var i=1;i<=num;i++){
+        //         for(var j=1;j<=i;j++){
+        //             document.write(j + "&nbsp");
+        //         }
+        //         document.write("<br>");
+        //     }
+        // }
+        // print(9);
+        // var arr=[4,9,3,5,1];
+        // console.log(arr.sort());
+        // function  fn(num) {
+        //     if(num % 3 ==0 && num % 5 ==0 && num % 7==0){
+        //         return true;
+        //     }
+        //     return  false ;
+        // }
+        //  var result = [];
+        // for(var i =1;i<=1000;i++){
+        //     if(fn(i)){
+        //         result.push(i);
+        //     }
+        // }
+        // for(var i =0 ;i<result.length;i++ ){
+        //     document.write(result[i] + "&nbsp;");
+        //     if((i+1) % 6 ==0 ){
+        //         document.write("<br>");
+        //     }
+        // }
+        // function  fn(num){
+        //     var bflag=false;
+        //     for( var i=2;i<=Math.sqrt(num);i++ ){
+        //         if(num % i==0){
+        //             bflag = false ;
+        //             break;
+        //         }else{
+        //             bflag =true;
+        //         }
+        //     }
+        //     if(bflag){
+        //         return  true;
+        //     }
+        //     return  false;
+        // }
+        // var result=[];
+        // for(var i=100;i<=1000; i++){
+        //     if(fn(i)){
+        //         result.push(i);
+        //     }
+        // }
+        // for(var i=0;i<result.length;i++){
+        //     document.write(result[i]+"&nbsp;")
+        //     if((i+1)%6==0){
+        //         document.write ("<br>");
+        //     }
+        // }
+        function fibonacci(n){
+            if( n==1 || n==2){
+                return 1;
             }
+            return fibonacci(n-1) + fibonacci(n-2)
         }
-        print(9);
+        document.write(fibonacci (8))
+
+        function fibonacci2(n){
+            var arr=[1,1];
+            for(var i = 2;i<n;i++){
+                arr[i]=arr[i-1]+arr[i-2]
+            }
+            return arr[n-1]
+        }
+        document.write(fibonacci2(8))
+        function fibonacci3(n) {
+            var n1=1, n2=1,sum;
+            for(var i =3;i<=n;i++){
+                sum=n1+n2;
+                n1=n2
+                n2=sum
+            }
+            return n2
+        }
+        document.write(fibonacci3(8))
     </script>
 </body>
 </html>

@@ -60,12 +60,19 @@
     <script>
         var oNav = document.getElementById("nav");
         var aLi = oNav.getElementsByTagName("li");
+        var oContent = document.getElementById ("content");
+        var aDiv = oContent.getElementsByTagName("div");
         for (var i =0;i<aLi.length;i++){
+            aLi[i].index = i;//给每一个li对象自定义属性，保存住当时的i值
+            //相当于aLi[1].index = 1
             aLi[i].onclick = function (ev) {
                 for (var i = 0 ;i<aLi.length;i++){
                     aLi[i].className = "";//清空
+                    aDiv[i].className = "";
                 }
                 this.className = "selected";//class的名字
+                console.log(this.index);
+                aDiv[this.index].className = "selected"
             };
         }
 

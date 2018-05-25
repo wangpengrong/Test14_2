@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        img {
+            border: 0;
+        }
+        #container{
+            position: relative;
+            width: 690px;
+            height: 516px;
+            margin: 100px auto ;
+        }
+        #imgs img{
+            display: none;
+        }
+        #imgs .selected{
+            display: block;
+        }
+        #nav{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        #nav li,#arrows div{
+            width: 20px;
+            height: 20px;
+            background: #000;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            float: left;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        #nav .selected{
+            background: orange;
+        }
+        #arrows{
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="imgs">
+            <img src="img/1.jpg" alt="" class="selected">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+        </div>
+        <ul id="nav">
+            <li class="selected">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div id="arrows">
+            <div id="left">&lt;</div>
+            <div id="right">&gt;</div>
+        </div>
+    </div>
+    <script>
+        var oNav = document.getElementById("nav");
+        var aLi = oNav.getElementsByTagName("li");
+        var oImg = document.getElementById ("imgs");
+        var aImg = oImg.getElementsByTagName("img");
+        for(var i = 0;i<aLi.length; i++){   //，每一个都绑定
+            aLi[i].index = i;
+            aLi[i].onmouseover = function(){
+                for (var i = 0;i<aLi.length;i++){
+                    aLi[i].className = "";  //把所有都干掉
+                    aImg[i].className = "";
+                }
+                this.className="selected";//把当前变成selected
+                aImg[this.index].className = "selected";
+            };
+        }
+    </script>
+</body>
+</html>
